@@ -12,23 +12,29 @@ fieldset {
     background-color: black;
     color: white;
   }
-  input[type="text"] {
-    height: 30px;
-    width: 400px;
-  }
+  form{
+    display: flex;
 
-  input[type="submit"]{
-    text-decoration: none;
-    background-color: $primary-btn;
-    color: white;
-    font-weight: bold;
-    outline: none;
-    border: 1px solid $primary-btn;
-    padding: 9px;
-  }
+    input[type="text"] {
+      height: 30px;
+      width: 400px;
+    }
 
-  input[type="submit"]:hover {
-    background-color: #008fff;
+    input[type="submit"]{
+      text-decoration: none;
+      background-color: $primary-btn;
+      color: white;
+      font-weight: bold;
+      outline: none;
+      border: 1px solid $primary-btn;
+      padding: 9px;
+      border-radius: 0 5px 5px 0;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #008fff;
+    }
+
   }
 
 }
@@ -47,4 +53,8 @@ fieldset {
 
 .user-background + .coach-background {
   margin: 10px 0;
+}
+
+a {
+  text-decoration: none;
 }
