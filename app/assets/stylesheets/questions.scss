@@ -1,0 +1,50 @@
+// Place all the styles related to the Questions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+$primary-btn: #007bff;
+
+fieldset {
+  display: inline-block;
+  border: 4px solid lightseagreen;
+  border-radius: 5px;
+  legend {
+    background-color: black;
+    color: white;
+  }
+  input[type="text"] {
+    height: 30px;
+    width: 400px;
+  }
+
+  input[type="submit"]{
+    text-decoration: none;
+    background-color: $primary-btn;
+    color: white;
+    font-weight: bold;
+    outline: none;
+    border: 1px solid $primary-btn;
+    padding: 9px;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #008fff;
+  }
+
+}
+
+.user-ask, .coach {
+  display: block;
+  width: 400px;
+  padding: 1em;
+}
+.user-background {
+  background-color: rgba(46, 139, 87, 0.1);
+}
+.coach-background {
+  background-color: rgba(255, 69, 0, 0.1);
+}
+
+.user-background + .coach-background {
+  margin: 10px 0;
+}
